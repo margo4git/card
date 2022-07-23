@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/card/static/css/main.5c623b3d.css",
+    "main.js": "/card/static/js/main.d3acf683.js",
+    "static/js/787.658bc779.chunk.js": "/card/static/js/787.658bc779.chunk.js",
+    "static/media/discover.png": "/card/static/media/discover.3dde2fd51059bb4aa39e.png",
+    "static/media/chip.png": "/card/static/media/chip.f88a902d8d270caaf1ac.png",
+    "static/media/mastercard.png": "/card/static/media/mastercard.fdd172ae0eb926d5bbe9.png",
+    "static/media/logo.svg": "/card/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/card/index.html",
+    "main.5c623b3d.css.map": "/card/static/css/main.5c623b3d.css.map",
+    "main.d3acf683.js.map": "/card/static/js/main.d3acf683.js.map",
+    "787.658bc779.chunk.js.map": "/card/static/js/787.658bc779.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5c623b3d.css",
+    "static/js/main.d3acf683.js"
+  ]
+}
