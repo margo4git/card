@@ -1,0 +1,217 @@
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0px 0px 20px 15px rgba(0, 0, 0, 0.2);
+  padding-top: 120px;
+  border-radius: 8px;
+}
+
+.flipCart {
+  position: absolute;
+  background-color: transparent;
+  width: 360px;
+  height: 240px;
+  perspective: 1000px;
+  top: -120px;
+}
+
+.cartInner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.cart,
+.cartBack {
+  background-image: url("https://stocksnap.io/photo/XQESGTCJEV/editor");
+}
+.cart {
+  box-shadow: 0px 0px 15px 15px rgba(0, 0, 0, 0.2);
+  background-size: cover;
+  border-radius: 16px;
+  display: flex;
+  font-weight: 600;
+  font-size: 28px;
+}
+.frontCard {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.frontCard .containerTypeCard .typeCard {
+  margin-top: 0px;
+  margin-right: 0px;
+}
+
+.cartInnerRotate {
+  transform: rotateY(180deg);
+}
+
+.cart,
+.cartBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.cart > div {
+  color: white;
+}
+
+.cartBack {
+  color: white;
+  background-size: cover;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 28px;
+  justify-content: center;
+  flex-direction: column;
+  transform: rotateY(180deg);
+  box-shadow: 0px 0px 15px 15px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.numberContainer {
+  display: flex;
+
+  padding: 4px 12px;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+}
+.numberContainer:hover .borderNumbers {
+  opacity: 1;
+
+  outline-width: 50px;
+}
+
+.numberContainer > div {
+  padding: 6px;
+}
+.information {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.cardHolderExpires {
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.cardHolderExpires:first-child {
+  align-items: flex-start;
+}
+.greyText {
+  color: rgb(175, 175, 175);
+  font-size: 16px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  padding: 24px;
+}
+
+.block {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 16px;
+}
+.block > div {
+  margin-bottom: 0px;
+}
+.selectsContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.selects {
+  display: flex;
+}
+select {
+  display: flex;
+  margin-right: 16px;
+  flex: 1;
+  padding: 10px 10px 9px 10px;
+  border: 1px solid rgb(158, 173, 195);
+  border-radius: 8px;
+  cursor: pointer;
+  background: url(./../../images/down-arrow-24.png) no-repeat right;
+  background-size: 16px;
+  -webkit-appearance: none;
+  background-position-x: 90%;
+}
+select:focus {
+  outline: none;
+  border-color: rgb(106, 185, 227);
+  box-shadow: 0px 8px 16px -4px rgba(0, 0, 0, 0.2);
+}
+.sumbit {
+  font-size: 18px;
+  color: white;
+  padding: 8px 0 8px 0;
+  background-color: rgb(58, 84, 214);
+  border-radius: 4px;
+  border-style: none;
+  box-shadow: 0px 16px 16px -8px rgba(0, 0, 0, 0.2);
+}
+.cartBackContainer {
+  height: 100%;
+  width: 100%;
+  padding: 32px 0 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.cartBackContainer > span {
+  font-size: 16px;
+  margin-right: 26px;
+  margin-top: 16px;
+}
+.blackLine {
+  border: none;
+  background-color: black;
+  opacity: 0.85;
+  height: 48px;
+  width: 100%;
+}
+.whiteLine {
+  color: black;
+  position: relative;
+  border-radius: 4px;
+  background-color: white;
+  display: flex;
+  align-self: stretch;
+  height: 44px;
+  margin: 0 16px;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10px;
+  font-size: 16px;
+}
+.typeCard {
+  display: flex;
+  height: 45px;
+  margin-top: 32px;
+  margin-right: 16px;
+}
+.containerTypeCard {
+  display: flex;
+  justify-content: space-between;
+}

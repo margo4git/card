@@ -1,0 +1,37 @@
+.dateContainer {
+  position: relative;
+}
+.newDate {
+  position: absolute;
+  top: 8px;
+  transition: all 200ms ease-in-out;
+}
+.newDateVisible {
+  position: absolute;
+  top: 0px;
+  transition: all 200ms ease-in-out;
+}
+.oldDate {
+  position: relative;
+  opacity: 1;
+  top: 0px;
+  transition: all 200ms ease-in-out;
+}
+.oldDateHidden {
+  opacity: 1;
+  top: -8px;
+}
+
+.element {
+  animation: nudge 5s;
+}
+
+@keyframes nudge {
+  0% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    transform: translateY(-8px);
+  }
+}

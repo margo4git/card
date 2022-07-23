@@ -1,0 +1,24 @@
+.numberContainer {
+  position: relative;
+}
+.numberContainer > span {
+  text-shadow: 0px 0px 10px black;
+}
+.number {
+  position: absolute;
+  top: 8px;
+  transition: all 200ms ease-in-out;
+}
+.numberVisible {
+  top: 0px;
+}
+.noneNumber {
+  position: relative;
+  opacity: 1;
+  top: 0px;
+  transition: all 200ms ease-in-out;
+}
+.noneNumberHidden {
+  opacity: 0;
+  top: -8px;
+}
